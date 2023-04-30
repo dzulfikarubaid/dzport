@@ -23,5 +23,5 @@ urlpatterns = [
     path('api/', views.DetailsTable.as_view()),
     path('update/<int:pk>', views.DetailsUpdate.as_view()),
     path('delete/<int:pk>', views.DetailsDelete.as_view()),
-    path("home/", TemplateView.as_view(template_name="base.html")),
+    path("", TemplateView.as_view(template_name="base.html")),
 ]
