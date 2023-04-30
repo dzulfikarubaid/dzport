@@ -13,7 +13,7 @@ function Button(props){
 function Search(){
     const [data, setData] =useState([])
     useEffect(()=>{
-        Axios.get('http://localhost:8000/').then((res) => setData(res.data))
+        Axios.get('https://dzport.vercel.app/').then((res) => setData(res.data))
     },[])
     return(
         <div id="work" className="flex items-center justify-center flex-col gap-8 p-[3rem]">
