@@ -6,14 +6,14 @@ function List(props){
 }
 function Navbar(){
     return(
-        <div className="navBar flex justify-between items-center flex-wrap p-[3rem]">
+        <div className="navBar flex justify-between items-center flex-wrap text-center sm:justify-center p-[3rem]">
             <div className="logoDiv">
                 <h1 className="logo text-[25px] text-blueC"><strong>dz</strong>portfolio</h1>
             </div>
             <div className="menu flex gap-12">
                 <List><a href="#who">WHO</a></List>
-                <List>WHAT</List>
-                <List>WORK</List>
+                <List><a href="#what">WHAT</a> </List>
+                <List><a href="#work">WORK</a> </List>
             </div>
 
         </div>

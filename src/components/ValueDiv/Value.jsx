@@ -10,12 +10,12 @@ function Value(){
     return(
         <div id="who" className="flex items-center justify-center flex-col gap-8 p-[3rem] mb-12">
             <h1 className="font-semibold text-textC text-[32px]">Hi, I am Dzul</h1>
-            <p>A student interested in web development and artificial intelligence</p>
+            <p className="text-center">A student interested in web development and artificial intelligence</p>
             <Button>Check My Resume</Button>
             <p>or connect with me on</p>
             <div className="social flex flex-row gap-6">
-                <a href="example.com"><FaInstagram size="50px"></FaInstagram></a> 
-                <a href=""><FaLinkedinIn size="50px"></FaLinkedinIn></a>   
+                <a href="example.com"><FaInstagram size="40px"></FaInstagram></a> 
+                <a href=""><FaLinkedinIn size="40px"></FaLinkedinIn></a>   
             </div>
         </div>
     )
