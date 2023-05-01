@@ -6,7 +6,7 @@ function List(props){
 }
 function Navbar(){
     return(
-        <div className="navBar flex justify-between items-center flex-wrap sm:justify-center p-[3rem]">
+        <div className="navBar flex flex-col lg:justify-between items-center lg:flex-row md:justify-between md:flex-row  p-[3rem]">
             <div className="logoDiv">
                 <h1 className="logo text-[25px] text-center text-blueC"><strong>dz</strong>portfolio</h1>
             </div>

@@ -18,10 +18,15 @@ function Search(){
     return(
         <div id="work" className="flex items-center justify-center flex-col gap-8 p-[3rem]">
         <h1 className="font-semibold text-textC text-[32px]">Recent Works</h1>
+        {/* <iframe className="absolute bg-white w-full h-[700px]" src="https://sezero.tech/dezolver" allowFullScreen="allowFullScreen"  ></iframe> */}
         <div className="container mx-auto px-6 sm:flex sm:flex-wrap sm:gap-10 sm:justify-center">
             {data.map((work) => (
                 <div className="rounded-md border h-[600px] overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-80 p-5 flex flex-col justify-between">
                 <img className="rounded-md" src={`/static/images/${work.image}`} title={work.image} alt="" />
+                
+                <div className=" absolute " >
+                
+                </div>
                 <div className="py-6 h-full">
                     <h1 className="text-xl font-semibold tracking-tight pb-5">{work.title}</h1>
                     <h1 className="text-m">{work.desc}</h1>
