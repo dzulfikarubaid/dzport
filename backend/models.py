@@ -14,3 +14,16 @@ class DetailsModel(models.Model):
     def __str__(self):
         return self.title or ''
 
+class AIcamModel(models.Model):
+    id_img = models.AutoField(primary_key=True)
+    img = models.TextField()
+   
+class AIchatModel(models.Model):
+    id_chat = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=30)
+    chat = models.TextField()
+
+class MessageModel(models.Model):
+    id_msg = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=30)
+    msg = models.TextField()

@@ -21,6 +21,8 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', views.DetailsTable.as_view()),
+    path('api/AIcam/', views.AIcam),
+    path('api/AIchat/', views.AIchat),
     path('update/<int:pk>', views.DetailsUpdate.as_view()),
     path('delete/<int:pk>', views.DetailsDelete.as_view()),
     path("", TemplateView.as_view(template_name="base.html")),

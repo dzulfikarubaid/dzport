@@ -1,7 +1,6 @@
 // import {Logo.Django from "./components/Logos/Logos"
 import Logo from "../Logos/Logos"
 import React, {useEffect, useState } from "react"
-import Papa from "papaparse"
 import Axios from "axios"
 
 function Button(props){
