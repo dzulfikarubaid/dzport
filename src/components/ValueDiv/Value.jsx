@@ -22,7 +22,7 @@ function Value(){
                 </div>
                 </div>
                 <div>
-                <img src="images/10.avif" alt="" className="w-[400px]" />
+                <img src="/static/images/10.avif" alt="" className="w-[400px]" />
                 </div>
             </div>
         </motion.div>

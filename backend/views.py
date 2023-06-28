@@ -19,29 +19,9 @@ import re
 import json
 import openai
 # Set up the API endpoint and headers
-def chat_gpt(key):
-    api_endpoint = "https://api.openai.com/v1/engines/davinci/completions"
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": "Bearer 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"
-    }
-    # Set up the data for the API request
-    data = {
-        "prompt": key,
-        "temperature": 0.5,
-        "max_tokens": 100
-    }
-    # Send the request and receive the response
-    response = requests.post(api_endpoint, headers=headers, json=data)
-    # Print the response
-    response_json = json.loads(response.text)
-    # print(response_json)
-    answer = response_json
-    return answer
 
 def chatopenai(key):
     openai.api_key = config('OPENAI_API_KEY')
-
     response = openai.Completion.create(model="text-davinci-003", prompt=key, temperature=0.5, max_tokens=100)
     answer = response['choices'][0]['text']
     answer = " ".join(answer.split()[0:])

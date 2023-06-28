@@ -6,7 +6,7 @@ function Job({isVisible}){
             <h1 className="font-semibold text-[32px] text-center">What I Do</h1>
             <div className="flex flex-row gap-10 ">
             <motion.div initial={{opacity:0,x:-100}} whileInView={{opacity:1, x:0}} delay={0.5} viewport={{once:true}} transition={{duration:1}} className="w-[400px]">
-                <img src="images/7.avif" alt="" />
+                <img src="/static/images/7.avif" alt="" />
             </motion.div>
             <motion.div initial={{opacity:0,x:200}} whileInView={{opacity:1, x:0}} delay={0.5} viewport={{once:true}} transition={{duration:1}} className="flex items-center flex-col gap-10 p-[3rem] w-[600px]">
             <h1 className="font-semibold text-[24px] text-center" >Data Science & Artificial Intelligence</h1>
@@ -32,7 +32,7 @@ function Job({isVisible}){
 
             <div className="flex flex-row gap-10 ">
             <motion.div initial={{opacity:0,x:-100}} whileInView={{opacity:1, x:0}} delay={0.5} viewport={{once:true}} transition={{duration:1}} className="w-[400px]">
-                <img src="images/4.jpg" alt="" />
+                <img src="/static/images/4.jpg" alt="" />
             </motion.div>
             <motion.div initial={{opacity:0,x:200}} whileInView={{opacity:1, x:0}} delay={0.5} viewport={{once:true}} transition={{duration:1}} className="flex items-center flex-col  gap-10 p-[3rem] w-[600px]">
             <h1 className="font-semibold text-[24px] text-center">Full Stack Development</h1>
