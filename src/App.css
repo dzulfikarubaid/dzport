@@ -7,6 +7,7 @@ body,html{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 html{
   scroll-behavior:smooth;
@@ -48,6 +49,17 @@ html{
 
 .card {
   padding: 2em;
+}
+.slideshow {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+}
+
+.slide {
+  flex: 0 0 100%;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .read-the-docs {

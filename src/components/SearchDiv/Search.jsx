@@ -20,7 +20,7 @@ function Search(){
         {/* <iframe className="absolute bg-white w-full h-[700px]" src="https://sezero.tech/dezolver" allowFullScreen="allowFullScreen"  ></iframe> */}
         <div className="container mx-auto px-6 sm:flex sm:flex-wrap sm:gap-10 sm:justify-center">
             {data.map((work) => (
-                <div className="rounded-md border h-[600px] overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-80 p-5 flex flex-col justify-between">
+                <div className="rounded-md border overflow-hidden mb-10 sm:mb-0 p-5 flex flex-col justify-between" key={work.title}>
                 <img className="rounded-md" src={`/static/images/${work.image}`} title={work.image} alt="" />
                 
                 <div className=" absolute " >

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
+import { FaCircle } from "react-icons/fa"
 function List(props){
-    const{style="text-[#6f6f6f] font-medium hover:text-blueC",children} = props
+    const{style="text-black font-medium hover:text-blueC",children} = props
     return(
         <li className={style}>{children}</li>
     )
@@ -15,8 +16,9 @@ function Navbar(){
                 <List><a href="#who">WHO</a></List>
                 <List><a href="#what">WHAT</a> </List>
                 <List><a href="#work">WORK</a> </List>
-                <List><a href="#wkwk">WKWK</a> </List>
+                {/* <List><a href="#wkwk">WKWK</a> </List> */}
             </div>
+            <a href="/live-project" className="p-2 px-3 bg-black text-white rounded-r-xl rounded-tl-lg hover:text-black hover:bg-blue-100 flex flex-row items-center gap-2">Live Project<span><FaCircle className="w-2" color="red"></FaCircle></span></a>
 
         </motion.div>
     )

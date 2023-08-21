@@ -6,7 +6,7 @@ function Job({isVisible}){
             <h1 className="font-semibold text-[32px] text-center">What I Do</h1>
             <div className="flex flex-row gap-10 ">
             <motion.div initial={{opacity:0,x:-100}} whileInView={{opacity:1, x:0}} delay={0.5} viewport={{once:true}} transition={{duration:1}} className="w-[400px]">
-                <img src="/static/images/7.avif" alt="" />
+                <img src="/images/7.avif" alt="" />
             </motion.div>
             <motion.div initial={{opacity:0,x:200}} whileInView={{opacity:1, x:0}} delay={0.5} viewport={{once:true}} transition={{duration:1}} className="flex items-center flex-col gap-10 p-[3rem] w-[600px]">
             <h1 className="font-semibold text-[24px] text-center" >Data Science & Artificial Intelligence</h1>
@@ -22,20 +22,19 @@ function Job({isVisible}){
                 <p>Image Processing</p>
                 <p>Natural Language Processing</p>
                 <p>Optical Character Recognition</p>
-                <p>Data Collection</p>
-                <p>Regression Analysis</p>
+                <p>Web Scraping</p>
                 <p>Machine Learning</p>
 
             </div>
             </motion.div>
             </div>
 
-            <div className="flex flex-row gap-10 ">
-            <motion.div initial={{opacity:0,x:-100}} whileInView={{opacity:1, x:0}} delay={0.5} viewport={{once:true}} transition={{duration:1}} className="w-[400px]">
-                <img src="/static/images/4.jpg" alt="" />
+            <div className="flex flex-row-reverse gap-10 ">
+            <motion.div initial={{opacity:0,x:200}} whileInView={{opacity:1, x:0}} delay={0.5} viewport={{once:true}} transition={{duration:1}} className="w-[400px]">
+                <img src="/images/4.jpg" alt="" />
             </motion.div>
-            <motion.div initial={{opacity:0,x:200}} whileInView={{opacity:1, x:0}} delay={0.5} viewport={{once:true}} transition={{duration:1}} className="flex items-center flex-col  gap-10 p-[3rem] w-[600px]">
-            <h1 className="font-semibold text-[24px] text-center">Full Stack Development</h1>
+            <motion.div initial={{opacity:0,x:-100}} whileInView={{opacity:1, x:0}} delay={0.5} viewport={{once:true}} transition={{duration:1}} className="flex items-center flex-col  gap-10 p-[3rem] w-[600px]">
+            <h1 className="font-semibold text-[24px] text-center">Software Development</h1>
             <div className="flex flex-wrap gap-10 justify-center">
             <Logo title="HTML"></Logo>
             <Logo title="CSS"></Logo>
@@ -47,11 +46,12 @@ function Job({isVisible}){
             <Logo title="PostgreSQL"></Logo>
             <Logo title="MySQL"></Logo>
             </div>
-            <div className="flex flex-col gap-5 text-left w-full">
+            <div className="flex flex-col gap-5 text-left w-full"> 
                 <p>Frontend Development using React</p>
-                <p>Mobile App Development using React Native</p>
+                <p>Mobile App Development using React Native and Ionic</p>
                 <p>Rest API Development using Django Rest Framework</p>
                 <p>Backend Development using Django and Flask</p>
+                <p>Full Stack Development using Next.js</p>
             </div>
             </motion.div>
             </div>
